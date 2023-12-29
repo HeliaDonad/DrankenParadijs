@@ -1,0 +1,23 @@
+columnSuffix: edcnxlir
+contentColumnType: text
+fieldGroup: 89f003ec-2127-4003-b52c-afad58cb98ea # Common
+handle: richText
+instructions: null
+name: 'Rich Text'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  purifierConfig: Default.json
+  purifyHtml: true
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  tinymceConfig: Default.json
+translationKeyFormat: null
+translationMethod: none
+type: abmat\tinymce\Field
