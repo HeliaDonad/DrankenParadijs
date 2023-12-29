@@ -1,0 +1,19 @@
+columnSuffix: hzmlrqek
+contentColumnType: text
+fieldGroup: 89f003ec-2127-4003-b52c-afad58cb98ea # Common
+handle: fullText
+instructions: null
+name: 'full text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

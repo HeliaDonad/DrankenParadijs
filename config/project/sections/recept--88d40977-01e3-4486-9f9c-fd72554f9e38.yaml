@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: recept
+name: recept
+propagationMethod: all
+siteSettings:
+  ace54ebe-7118-4e76-9672-0cfe7d4679bc: # DrankenParadijs
+    enabledByDefault: true
+    hasUrls: true
+    template: drinks/_entry
+    uriFormat: 'drinks/{slug}'
+type: channel

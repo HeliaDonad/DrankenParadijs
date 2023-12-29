@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{craft.app.language}}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{siteName}}</title>
+    {% do craft.app.view.registerCssFile('@web/styles/normalize.css') %}
+    {% do craft.app.view.registerCssFile('@web/styles/style.css?1234') %}
+</head>
+<body>
+    <header>
+    <h1>DrankenParadijs</h1>
+    <nav>
+        <input type="checkbox" name="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul class="menu-nav">
+            <li><a href="{{siteUrl}}">Home</a></li>
+            <li><a href="#">Nieuws & Inspiratie</a></li>
+            <li><a href="#">Recepten</a></li>
+            <li><a href="#">Ons Assortiment</a></li>
+            <li><a href=""{{siteUrl}}about-us"">Over Ons</a></li>
+        </ul>
+    </nav>
+</header>
+    {% block content %}
+
+    {% endblock %}
+<footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolorem nam rem reprehenderit cum praesentium animi veniam optio enim autem, aperiam sed consectetur aliquid ad itaque, inventore excepturi illo velit!</p>
+        <a href="#">privacy policy</a>
+    </footer>
+
+</body>
+</html>

@@ -1,45 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DrankenParadijs</title>
-    <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-<header>
-    <h1>DrankenParadijs</h1>
-    <nav>
-        <input type="checkbox" name="menu-toggle" id="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-        <ul class="menu-nav">
-            <li><a href="./Home.html">Home</a></li>
-            <li><a href="./pages/ReclamePagina.html">Nieuws & Inspiratie</a></li>
-            <li><a href="./pages/ReceptPagina.html">Recepten</a></li>
-            <li><a href="./pages/AssortimentPagina.html">Ons Assortiment</a></li>
-            <li><a href="./pages/OverOnsPagina.html">Over Ons</a></li>
-        </ul>
-    </nav>
-</header>
+{% extends "_layout" %}
 
+
+{% block content %}  
 <section class="secties">
+  {% set entries = craft.entries().section('reclame').limit(1) %}
+
+  {% for entry in entries %}
     <article>
       <picture>
-        <source media="(max-width:959px)" srcset="https://fakeimg.pl/600x300">
-        <source media="(min-width:960px)" srcset="https://fakeimg.pl/800x400">
-        <img src="https://fakeimg.pl/500x200" alt="">
+                <source media="(max-width:959px)" srcset="{{entry.bannerImage.one().url('bannerImage')}}">
+          <source media="(min-width:960px)" srcset="{{entry.bannerImage.one().url('bannerImage')}}">
+        <img src="{{entry.bannerImage.one().url('bannerImage')}}" alt="">
       </picture>
         <div>
-          <h2><a href="./pages/ReceptDetails.html">Reclame Titel 1</a></h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac odio eget felis vestibulum feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac odio eget felis vestibulum feugiat.</p>
-          <a href="./pages/ReceptDetails.html">Lees meer</a>
+          <h2><a href="{{entry.url}}">{{entry.title}}</a></h2>
+          <p>{{entry.introduction}}</p>
+          <p>{{entry.fullText}}</p>
+          <a href="{{entry.url}}">Lees meer</a>
         </div>
     </article>
+  {% endfor %}
   </section>
-
     <h2 class="h2">Favoriete recepten</h2>
     <section class="secties2 alle-r">
       <article>
@@ -78,10 +59,4 @@
             </div>
         </article>
         </section>
-
-      <footer>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolorem nam rem reprehenderit cum praesentium animi veniam optio enim autem, aperiam sed consectetur aliquid ad itaque, inventore excepturi illo velit!</p>
-        <a href="#">privacy policy</a>
-    </footer>
-</body>
-</html>
+{% endblock %}
