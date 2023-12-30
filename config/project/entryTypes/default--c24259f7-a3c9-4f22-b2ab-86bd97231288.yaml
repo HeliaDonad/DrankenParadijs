@@ -1,5 +1,5 @@
 fieldLayouts:
-  f56980fc-a0b4-408f-9669-013c545af1e0:
+  e8dd2749-8d23-49b1-8c90-302a4cbae9ea:
     tabs:
       -
         elementCondition: null
@@ -27,33 +27,21 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 2f5b9366-14f4-4572-be70-460019d39ecb
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 564caf4f-fd90-4ca0-aa9e-be92753bc0f6 # Rich Text
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 9589ca0d-2cae-4e0e-92ee-f5fb21406927
+            uid: 40c9d21c-a46d-4589-a6a2-4def1658b266
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: d329d9df-b6d6-4968-a387-2e310c7f0935
+        uid: 4ae10350-6af6-4fee-8bb1-b2ad8abdf8c6
         userCondition: null
-handle: footer
-hasTitleField: false
-name: footer
-section: 27bd3e43-7316-4a7d-a87c-26613e63cd50 # footer
+handle: default
+hasTitleField: true
+name: Default
+section: 45f4b5c1-1aa9-41b3-b642-6e387d537078 # Store Categories
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
 sortOrder: 1
-titleFormat: '{section.name|raw}'
+titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

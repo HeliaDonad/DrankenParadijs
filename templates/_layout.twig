@@ -9,7 +9,8 @@
 </head>
 <body>
     <header>
-    <h1>DrankenParadijs</h1>
+      {% set header = craft.entries().section('header').one() %}
+      {{header.richText}}
     <nav>
         <input type="checkbox" name="menu-toggle" id="menu-toggle">
         <span></span>
@@ -18,8 +19,8 @@
         <ul class="menu-nav">
             <li><a href="{{siteUrl}}">Home</a></li>
             <li><a href="{{siteUrl}}reclame">Nieuws & Inspiratie</a></li>
-            <li><a href="#">Recepten</a></li>
-            <li><a href="#">Ons Assortiment</a></li>
+            <li><a href="{{siteUrl}}recept">Recepten</a></li>
+            <li><a href="{{siteUrl}}assortiment">Ons Assortiment</a></li>
             <li><a href="{{siteUrl}}about-us">Over Ons</a></li>
         </ul>
     </nav>
@@ -28,8 +29,8 @@
 
     {% endblock %}
 <footer>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolorem nam rem reprehenderit cum praesentium animi veniam optio enim autem, aperiam sed consectetur aliquid ad itaque, inventore excepturi illo velit!</p>
-        <a href="#">privacy policy</a>
+      {% set footer = craft.entries().section('footer').one() %}
+      {{footer.richText}}
     </footer>
 
 </body>

@@ -1,0 +1,84 @@
+{% extends "_layout" %}
+
+{% block content %}
+{% set categories = craft.entries().section('storeCategories').all() %}
+    <div class="indeling">
+      {% for cat in categories %}
+        <label><input type="checkbox" name="{{cat}}"/>{{cat}}</label>
+      {% endfor %}
+    </div>
+
+    <section class="secties alle-producten">
+    {% set entries = craft.entries().section('plugins').all() %}
+
+    {% for entry in entries %}
+        <article>
+        {% for category in entry.storeCategories %}
+          data-{{category}}
+        {% endfor %}
+          <picture>
+            <source media="(max-width:959px)" srcset="https://fakeimg.pl/200x300">
+            <source media="(min-width:960px)" srcset="https://fakeimg.pl/200x300">
+            <img src="https://fakeimg.pl/500x200" alt="">
+          </picture>
+            <div>
+              <h3><a href="#">Product Titel 1</a></h3>
+              <p>Prijs</p>
+              <a href="#">+ Voeg toe</a>
+            </div>
+        </article>
+
+        <article>
+            <picture>
+              <source media="(max-width:959px)" srcset="https://fakeimg.pl/200x300">
+              <source media="(min-width:960px)" srcset="https://fakeimg.pl/200x300">
+              <img src="https://fakeimg.pl/500x200" alt="">
+            </picture>
+              <div>
+                <h3><a href="#">Product Titel 2</a></h3>
+                <p>Prijs</p>
+                <a href="#">+ Voeg toe</a>
+              </div>
+          </article>
+
+          <article>
+            <picture>
+              <source media="(max-width:959px)" srcset="https://fakeimg.pl/200x300">
+              <source media="(min-width:960px)" srcset="https://fakeimg.pl/200x300">
+              <img src="https://fakeimg.pl/500x200" alt="">
+            </picture>
+              <div>
+                <h3><a href="#">Product Titel 3</a></h3>
+                <p>Prijs</p>
+                <a href="#">+ Voeg toe</a>
+              </div>
+          </article>
+
+          <article>
+            <picture>
+              <source media="(max-width:959px)" srcset="https://fakeimg.pl/200x300">
+              <source media="(min-width:960px)" srcset="https://fakeimg.pl/200x300">
+              <img src="https://fakeimg.pl/500x200" alt="">
+            </picture>
+              <div>
+                <h3><a href="#">Product Titel 4</a></h3>
+                <p>Prijs</p>
+                <a href="#">+ Voeg toe</a>
+              </div>
+          </article>
+
+          <article>
+            <picture>
+              <source media="(max-width:959px)" srcset="https://fakeimg.pl/200x300">
+              <source media="(min-width:960px)" srcset="https://fakeimg.pl/200x300">
+              <img src="https://fakeimg.pl/500x200" alt="">
+            </picture>
+              <div>
+                <h3><a href="#">Product Titel 5</a></h3>
+                <p>Prijs</p>
+                <a href="#">+ Voeg toe</a>
+              </div>
+          </article>
+        </div>
+        </section>
+{% endblock %}

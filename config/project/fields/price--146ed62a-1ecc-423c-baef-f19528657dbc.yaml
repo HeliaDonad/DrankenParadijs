@@ -1,0 +1,20 @@
+columnSuffix: hwltgmcu
+contentColumnType: integer(5)
+fieldGroup: 89f003ec-2127-4003-b52c-afad58cb98ea # Common
+handle: price
+instructions: null
+name: price
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: null
+  max: 99999
+  min: 0
+  prefix: €
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

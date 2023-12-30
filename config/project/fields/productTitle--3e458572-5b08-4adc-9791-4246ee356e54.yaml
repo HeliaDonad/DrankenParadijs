@@ -1,0 +1,19 @@
+columnSuffix: ejwdjsex
+contentColumnType: text
+fieldGroup: 89f003ec-2127-4003-b52c-afad58cb98ea # Common
+handle: productTitle
+instructions: null
+name: 'product title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
