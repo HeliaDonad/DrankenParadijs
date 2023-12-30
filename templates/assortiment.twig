@@ -9,13 +9,7 @@
     </div>
 
     <section class="secties alle-producten">
-    {% set entries = craft.entries().section('plugins').all() %}
-
-    {% for entry in entries %}
         <article>
-        {% for category in entry.storeCategories %}
-          data-{{category}}
-        {% endfor %}
           <picture>
             <source media="(max-width:959px)" srcset="https://fakeimg.pl/200x300">
             <source media="(min-width:960px)" srcset="https://fakeimg.pl/200x300">
