@@ -2,7 +2,7 @@
 
 {% block content %}
 {% set categories = craft.entries().section('storeCategories').all() %}
-    <div class="indeling">
+    <div class="assortiment-indeling">
       {% for cat in categories %}
         <label><input type="checkbox" name="{{cat}}"/>{{cat}}</label>
       {% endfor %}
@@ -19,15 +19,50 @@
             <img src="{{entry.bannerImage.one().url('bannerImage')}}" alt="">
           </picture>
             <div>
+              <h3><a href="#">{{entry.title}}</a></h3>
+              <p>€{{entry.price}}</p>
+            <div class="indeling">
             {% for category in entry.storeCategories %}
                 <span>{{category}}</span>
             {% endfor %}
-              <h3><a href="#">{{entry.title}}</a></h3>
-              <p>€{{entry.price}}</p>
+          </div>
               <a href="#">+ Voeg toe</a>
             </div>
         </article>
-        </div>
         {% endfor %}
         </section>
+<script>
+    let selectedCategories = [];
+
+    document.querySelectorAll(".assortiment-indeling input").forEach((element) => {
+      element.addEventListener("change", onSelectCategory);
+    });
+
+
+    function onSelectCategory(e) {
+      if (selectedCategories.includes(this.name)) {
+        let index = selectedCategories.indexOf(this.name);
+        selectedCategories.splice(index, 1);
+      }
+      else {
+        selectedCategories.push(this.name);
+      }
+      updateGrid();
+    }
+
+    function updateGrid() {
+      document.querySelectorAll(".secties article").forEach((el) => {
+        el.style.display = "none";
+        console.log(selectedCategories);
+        for (let i = 0; i < selectedCategories.length; i++) {
+          if (el.hasAttribute("data-" + selectedCategories[i])) {
+            el.style.display = "block";
+          }
+        }
+        if (selectedCategories.length == 0) {
+          el.style.display = "block";
+        }
+      });
+    }
+  </script>
 {% endblock %}

@@ -124,7 +124,22 @@ h1 {
   text-align: center;
 }
 
-.indeling {
+.secties article .indeling {
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.secties article .indeling span {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  padding: 0.25rem;
+  border-radius: 5px;
+  border: 1px solid #F6F4F4;
+
+}
+
+.assortiment-indeling {
     padding: 1rem 0 0 0;
     display: flex;
     max-width: 1000px;
@@ -136,11 +151,11 @@ h1 {
     flex-wrap: wrap;
   }
   
-  .indeling input {
+  .assortiment-indeling input {
     display: none;
   }
   
-  .indeling label {
+  .assortiment-indeling label {
     border: 2px solid #6547e9;
     border-radius: 12px;
     padding: 10px;
@@ -148,7 +163,7 @@ h1 {
     color: #6547e9;
   }
   
-.indeling label:has(input:checked) {
+.assortiment-indeling label:has(input:checked) {
     color: #fff;
     background-color: #6547e9;
   }
@@ -181,6 +196,9 @@ h3{
   width: 100%;
 }
 
+.padding{
+  padding-left: 1.5em;
+}
 
 @media only screen and (max-width: 959px) {
 
@@ -327,10 +345,6 @@ h3{
 
   .secties article img {
     margin: 0;
-  }
-
-  .secties article div {
-    padding-left: 1em;
   }
 
   .secties .btn-meer {
