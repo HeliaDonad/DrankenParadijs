@@ -1,14 +1,14 @@
 columnSuffix: hwltgmcu
-contentColumnType: integer(5)
+contentColumnType: 'decimal(5,2)'
 fieldGroup: 89f003ec-2127-4003-b52c-afad58cb98ea # Common
 handle: price
 instructions: null
 name: price
 searchable: false
 settings:
-  decimals: 0
+  decimals: 2
   defaultValue: null
-  max: 99999
+  max: 999.99
   min: 0
   prefix: €
   previewCurrency: null

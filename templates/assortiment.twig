@@ -9,70 +9,25 @@
     </div>
 
     <section class="secties alle-producten">
+    {% set entries = craft.entries().section('assortiment').all() %}
+
+    {% for entry in entries %}
         <article>
           <picture>
-            <source media="(max-width:959px)" srcset="https://fakeimg.pl/200x300">
-            <source media="(min-width:960px)" srcset="https://fakeimg.pl/200x300">
-            <img src="https://fakeimg.pl/500x200" alt="">
+            <source media="(max-width:959px)" srcset="{{entry.bannerImage.one().url('assortimentImage')}}">
+            <source media="(min-width:960px)" srcset="{{entry.bannerImage.one().url('assortimentImage')}}">
+            <img src="{{entry.bannerImage.one().url('bannerImage')}}" alt="">
           </picture>
             <div>
-              <h3><a href="#">Product Titel 1</a></h3>
-              <p>Prijs</p>
+            {% for category in entry.storeCategories %}
+                <span>{{category}}</span>
+            {% endfor %}
+              <h3><a href="#">{{entry.title}}</a></h3>
+              <p>€{{entry.price}}</p>
               <a href="#">+ Voeg toe</a>
             </div>
         </article>
-
-        <article>
-            <picture>
-              <source media="(max-width:959px)" srcset="https://fakeimg.pl/200x300">
-              <source media="(min-width:960px)" srcset="https://fakeimg.pl/200x300">
-              <img src="https://fakeimg.pl/500x200" alt="">
-            </picture>
-              <div>
-                <h3><a href="#">Product Titel 2</a></h3>
-                <p>Prijs</p>
-                <a href="#">+ Voeg toe</a>
-              </div>
-          </article>
-
-          <article>
-            <picture>
-              <source media="(max-width:959px)" srcset="https://fakeimg.pl/200x300">
-              <source media="(min-width:960px)" srcset="https://fakeimg.pl/200x300">
-              <img src="https://fakeimg.pl/500x200" alt="">
-            </picture>
-              <div>
-                <h3><a href="#">Product Titel 3</a></h3>
-                <p>Prijs</p>
-                <a href="#">+ Voeg toe</a>
-              </div>
-          </article>
-
-          <article>
-            <picture>
-              <source media="(max-width:959px)" srcset="https://fakeimg.pl/200x300">
-              <source media="(min-width:960px)" srcset="https://fakeimg.pl/200x300">
-              <img src="https://fakeimg.pl/500x200" alt="">
-            </picture>
-              <div>
-                <h3><a href="#">Product Titel 4</a></h3>
-                <p>Prijs</p>
-                <a href="#">+ Voeg toe</a>
-              </div>
-          </article>
-
-          <article>
-            <picture>
-              <source media="(max-width:959px)" srcset="https://fakeimg.pl/200x300">
-              <source media="(min-width:960px)" srcset="https://fakeimg.pl/200x300">
-              <img src="https://fakeimg.pl/500x200" alt="">
-            </picture>
-              <div>
-                <h3><a href="#">Product Titel 5</a></h3>
-                <p>Prijs</p>
-                <a href="#">+ Voeg toe</a>
-              </div>
-          </article>
         </div>
+        {% endfor %}
         </section>
 {% endblock %}

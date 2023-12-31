@@ -1,4 +1,4 @@
-dateModified: 1704028572
+dateModified: 1704036973
 email:
   fromEmail: r0936750@student.thomasmore.be
   fromName: DrankenParadijs
@@ -7,6 +7,13 @@ fs:
   a1:
     hasUrls: true
     name: a1
+    settings:
+      path: '@webroot/images'
+    type: craft\fs\Local
+    url: '@web/images'
+  aa1:
+    hasUrls: true
+    name: aa1
     settings:
       path: '@webroot/images'
     type: craft\fs\Local
@@ -37,7 +44,6 @@ meta:
     2f168f32-022e-41b6-b829-e8227dcba32f: Default # Default
     2f335e3c-a681-4023-b711-1537b7ba860c: 'header image' # header image
     3a1b225f-b8dd-4af7-9891-def9e4c15675: 'reclame assets' # reclame assets
-    3e458572-5b08-4adc-9791-4246ee356e54: 'product title' # product title
     5d527726-39bd-41f1-b851-6569cba7cf81: 'recept assets' # recept assets
     7de9a02c-50a5-4498-b039-9f4ffb040df1: 'banner image' # banner image
     8da4d8b0-06d5-4000-88b3-6d37af04c49c: introduction # introduction
@@ -57,11 +63,13 @@ meta:
     394e8bb7-9a67-4ca9-b2d7-1978533218ab: 'reclame text' # reclame text
     564caf4f-fd90-4ca0-aa9e-be92753bc0f6: 'Rich Text' # Rich Text
     a5f087e4-a3b3-454e-90e3-43620b2a61ff: Default # Default
+    a9debf39-46c8-4ec1-b6ab-d8bf324f9369: 'assortiment asset' # assortiment asset
     a9984d38-26a1-4c08-954d-daf19a6c1598: assortiment # assortiment
     ace54ebe-7118-4e76-9672-0cfe7d4679bc: DrankenParadijs # DrankenParadijs
     b419bd2b-ec55-4113-9035-024006bed5d4: header # header
     bfb57871-957a-42da-a4bf-dada052637a2: 'banner image' # banner image
     c24259f7-a3c9-4f22-b2ab-86bd97231288: Default # Default
+    d501feaa-af09-488e-9dbb-b7a86a6fa40f: 'assortiment image' # assortiment image
     de2a990d-7bbb-45fd-8538-c3aa9d2aee51: header # header
 plugins:
   abm-tinymce:
