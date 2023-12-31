@@ -12,7 +12,11 @@
     {% set entries = craft.entries().section('assortiment').all() %}
 
     {% for entry in entries %}
-        <article>
+        <article
+        {% for category in entry.storeCategories %}
+          data-{{category}}
+        {% endfor %}
+        >
           <picture>
             <source media="(max-width:959px)" srcset="{{entry.bannerImage.one().url('assortimentImage')}}">
             <source media="(min-width:960px)" srcset="{{entry.bannerImage.one().url('assortimentImage')}}">

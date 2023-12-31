@@ -24,7 +24,7 @@ settings:
         - class
         - craft\elements\conditions\entries\EntryCondition
   selectionLabel: null
-  showSiteMenu: false
+  showSiteMenu: true
   sources:
     - 'section:45f4b5c1-1aa9-41b3-b642-6e387d537078' # Store Categories
   targetSiteId: null
