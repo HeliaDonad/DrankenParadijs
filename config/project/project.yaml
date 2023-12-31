@@ -1,4 +1,4 @@
-dateModified: 1703970529
+dateModified: 1704028572
 email:
   fromEmail: r0936750@student.thomasmore.be
   fromName: DrankenParadijs
@@ -35,6 +35,7 @@ fs:
 meta:
   __names__:
     2f168f32-022e-41b6-b829-e8227dcba32f: Default # Default
+    2f335e3c-a681-4023-b711-1537b7ba860c: 'header image' # header image
     3a1b225f-b8dd-4af7-9891-def9e4c15675: 'reclame assets' # reclame assets
     3e458572-5b08-4adc-9791-4246ee356e54: 'product title' # product title
     5d527726-39bd-41f1-b851-6569cba7cf81: 'recept assets' # recept assets
@@ -53,6 +54,7 @@ meta:
     146ed62a-1ecc-423c-baef-f19528657dbc: price # price
     0197a4b4-fa80-4d23-9070-29ebcf6954ea: Default # Default
     219fbfdb-06e6-41ff-809a-590e5ac34411: 'full text' # full text
+    394e8bb7-9a67-4ca9-b2d7-1978533218ab: 'reclame text' # reclame text
     564caf4f-fd90-4ca0-aa9e-be92753bc0f6: 'Rich Text' # Rich Text
     a5f087e4-a3b3-454e-90e3-43620b2a61ff: Default # Default
     a9984d38-26a1-4c08-954d-daf19a6c1598: assortiment # assortiment

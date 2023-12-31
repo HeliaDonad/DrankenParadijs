@@ -1,0 +1,9 @@
+{% extends "_layout" %}
+
+{% block content %}
+    <section class="reclame-details">
+        <img src="{{entry.bannerImage.one().url('headerImage')}}" alt="">
+        <h2>{{entry.title}}</h2>
+        <p>{{entry.reclameText}}</p>
+    </section>
+{% endblock %}

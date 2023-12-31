@@ -57,6 +57,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 394e8bb7-9a67-4ca9-b2d7-1978533218ab # reclame text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0b691a44-49c6-4f4b-b262-7d22e8b7e39a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 7de9a02c-50a5-4498-b039-9f4ffb040df1 # banner image
             instructions: null
             label: null

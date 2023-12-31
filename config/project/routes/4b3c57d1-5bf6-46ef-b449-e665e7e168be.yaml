@@ -1,0 +1,6 @@
+siteUid: null
+sortOrder: 1
+template: reclame/_allreclame
+uriParts:
+  - reclame
+uriPattern: reclame
