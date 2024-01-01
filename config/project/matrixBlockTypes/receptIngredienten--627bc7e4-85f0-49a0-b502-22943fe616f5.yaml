@@ -46,7 +46,7 @@ fields:
                   - hoeveelheid
                 -
                   - width
-                  - ''
+                  - 100px
                 -
                   - type
                   - singleline
@@ -62,7 +62,7 @@ fields:
                   - ingredient
                 -
                   - width
-                  - ''
+                  - 100px
                 -
                   - type
                   - singleline

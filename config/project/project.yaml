@@ -1,4 +1,4 @@
-dateModified: 1704108795
+dateModified: 1704116516
 email:
   fromEmail: r0936750@student.thomasmore.be
   fromName: DrankenParadijs
@@ -73,6 +73,7 @@ meta:
     394e8bb7-9a67-4ca9-b2d7-1978533218ab: 'reclame text' # reclame text
     564caf4f-fd90-4ca0-aa9e-be92753bc0f6: 'Rich Text' # Rich Text
     627bc7e4-85f0-49a0-b502-22943fe616f5: 'recept ingrediënten' # recept ingrediënten
+    901d78dd-368b-4441-9f58-fb34898bb5f1: beoordelingNaam # beoordelingNaam
     60959cef-65c7-402d-a931-059debbc85b8: 'recept sluitzin' # recept sluitzin
     a5f087e4-a3b3-454e-90e3-43620b2a61ff: Default # Default
     a9debf39-46c8-4ec1-b6ab-d8bf324f9369: 'assortiment asset' # assortiment asset

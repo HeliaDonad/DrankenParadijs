@@ -4,6 +4,64 @@
     <section class="recepten-details">
         <img src="{{entry.bannerImage.one().url('headerImage')}}" alt="">
         <h2>{{entry.title}}</h2>
-        <p>{{entry.reclameText}}</p>
+        <p style="margin: 20px">{{entry.introduction}}</p>
+
+<div style="margin: 20px">
+{% for block in entry.receptInhoud %}
+		{% switch block.type %}
+
+    {% case 'receptInfo' %}
+		{{ block.bodyContent }}
+
+		{% case 'receptIngredienten' %}
+    <h3>INGREDIËNTEN</h3>
+        <table style="padding-bottom: 30px">
+            {% for row in block.ingredienten %}
+            <tr>
+                <td>{{ row.hoeveelheid }}</td>
+                <td style="padding-left: 60px">{{ row.ingredient }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        		
+		{% case "bereidingStappen" %}
+			
+        <div>
+            <h3>{{ block.stappenTitel }}</h3>
+            <ol>
+            	{% for step in block.stappenInhoud %}
+                <li>{{ step.stappenInstructies }}</li>
+                {% endfor %}
+            </ol>
+        </div>
+
+    {% case 'receptImage' %}
+		{% set image = block.bannerImage.one() %}
+        <div class="image-container"> 
+            <img src="{{ image.url('bannerImage') }}"
+                 alt=""/>
+			{% if block.imageCaption %}
+            <p class="caption">
+                <small>{{ block.imageCaption }}</small>
+            </p>
+            {% endif %}
+        </div>
+
+      {% case "receptTip" %}
+        <div style="padding-top: 30px">
+            <h3>{{ block.titelTip }}</h3>
+            <p>{{ block.tips }}</p>
+        </div>
+    {% case 'receptSluitzin' %}
+		<p>{{ block.sluitzin }}</p>
+
+    {% case 'receptBeoordeling' %}
+		<p>{{ block.beoordelingnaam }} ★ ★ ★ ★ ☆</p>
+    <p>Beoordeling: {{ block.beoordeling }}/5</p>
+
+      {% endswitch %}
+      {% endfor %}
+</div>
     </section>
 {% endblock %}

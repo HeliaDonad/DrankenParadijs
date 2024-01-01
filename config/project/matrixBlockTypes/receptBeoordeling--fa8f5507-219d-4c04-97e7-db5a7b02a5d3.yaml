@@ -7,6 +7,18 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: 901d78dd-368b-4441-9f58-fb34898bb5f1 # beoordelingNaam
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6df2aa27-24db-4bd7-a0d4-b938ddf1fc76
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 77a6baf9-db4b-41c2-b317-79f9551272ad # beoordeling
             instructions: null
             label: null
@@ -42,6 +54,26 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Number
+  901d78dd-368b-4441-9f58-fb34898bb5f1: # beoordelingNaam
+    columnSuffix: zicrooqg
+    contentColumnType: text
+    fieldGroup: null
+    handle: beoordelingnaam
+    instructions: null
+    name: beoordelingNaam
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
 handle: receptBeoordeling
 name: 'recept beoordeling'
 sortOrder: 7
