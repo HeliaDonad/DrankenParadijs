@@ -195,6 +195,23 @@ h3{
   width: 100%;
 }
 
+.recepten-details {
+  max-width: 800px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1em;
+}
+
+.recepten-details h2 {
+  margin-left: 2.2rem;
+}
+
+.recepten-details img {
+  padding-top: 20px;
+  width: 100%;
+}
+
 .padding{
   padding-left: 1.5em;
 }

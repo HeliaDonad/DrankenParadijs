@@ -39,7 +39,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 3aa38ce1-6cbf-4b67-8baa-f2732b7a476d
+            uid: fce29de6-bfc3-493b-bb1b-1fdf44a6df73
             userCondition: null
             warning: null
             width: 100
@@ -51,7 +51,19 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: fbed818b-a6af-46a0-83a6-a916e585c15d
+            uid: 7d7a58ab-9047-4b6f-bcc4-4c083c26ae43
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9f6d5827-cbea-40ba-855a-7b6e6168d46e # recept inhoud
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: da82bb5f-d62e-48a9-b613-2ad6b8fdbbfc
             userCondition: null
             warning: null
             width: 100

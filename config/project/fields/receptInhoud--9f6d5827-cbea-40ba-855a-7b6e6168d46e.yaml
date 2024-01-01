@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: d0a57b48-788a-4471-adb5-1f2af4bfe2ea # recept
+handle: receptInhoud
+instructions: null
+name: 'recept inhoud'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_receptinhoud}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

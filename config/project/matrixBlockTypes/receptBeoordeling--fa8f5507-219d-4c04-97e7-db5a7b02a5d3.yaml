@@ -1,0 +1,47 @@
+field: 9f6d5827-cbea-40ba-855a-7b6e6168d46e # recept inhoud
+fieldLayouts:
+  3f881001-2de6-4111-8341-4fac91b32015:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 77a6baf9-db4b-41c2-b317-79f9551272ad # beoordeling
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f38b072a-6d16-4daf-8c74-d7a9fa353c33
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: bc7bf5f8-9b77-401d-8e6d-ec326214afdd
+        userCondition: null
+fields:
+  77a6baf9-db4b-41c2-b317-79f9551272ad: # beoordeling
+    columnSuffix: fduvvpgf
+    contentColumnType: smallint(1)
+    fieldGroup: null
+    handle: beoordeling
+    instructions: null
+    name: beoordeling
+    searchable: false
+    settings:
+      decimals: 0
+      defaultValue: null
+      max: 5
+      min: 0
+      prefix: null
+      previewCurrency: null
+      previewFormat: decimal
+      size: null
+      suffix: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+handle: receptBeoordeling
+name: 'recept beoordeling'
+sortOrder: 7

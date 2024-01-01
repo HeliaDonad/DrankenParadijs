@@ -1,0 +1,78 @@
+field: 9f6d5827-cbea-40ba-855a-7b6e6168d46e # recept inhoud
+fieldLayouts:
+  e55798ed-46ab-4af1-8bfb-8d8965f2bb03:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e143d9da-11de-48fe-b74f-023ec4f97660 # ingrediënten
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 92ebbc2f-e616-4261-9d3c-6d7810f62226
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c48b04af-5e3c-4f8f-90ab-a79f0be5f2ce
+        userCondition: null
+fields:
+  e143d9da-11de-48fe-b74f-023ec4f97660: # ingrediënten
+    columnSuffix: jqftfydi
+    contentColumnType: text
+    fieldGroup: null
+    handle: ingredienten
+    instructions: null
+    name: ingrediënten
+    searchable: true
+    settings:
+      addRowLabel: 'Add a row'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Hoeveelheid
+                -
+                  - handle
+                  - hoeveelheid
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - heading
+                  - ingrediënt
+                -
+                  - handle
+                  - ingredient
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+      defaults: null
+      maxRows: null
+      minRows: null
+      staticRows: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+handle: receptIngredienten
+name: 'recept ingrediënten'
+sortOrder: 3

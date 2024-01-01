@@ -1,0 +1,46 @@
+field: 9f6d5827-cbea-40ba-855a-7b6e6168d46e # recept inhoud
+fieldLayouts:
+  07e037e1-dd37-47da-93e1-a6e8fc3530e2:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 4b42631d-bebe-47b6-9987-2ca1314f6dcb # sluitzin
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e8bc7c40-c215-4c24-ab39-35351419ec3b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: fec216e1-79e0-4feb-b5c9-9e6634308179
+        userCondition: null
+fields:
+  4b42631d-bebe-47b6-9987-2ca1314f6dcb: # sluitzin
+    columnSuffix: cighuylk
+    contentColumnType: text
+    fieldGroup: null
+    handle: sluitzin
+    instructions: null
+    name: sluitzin
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: receptSluitzin
+name: 'recept sluitzin'
+sortOrder: 6

@@ -1,0 +1,82 @@
+field: 9f6d5827-cbea-40ba-855a-7b6e6168d46e # recept inhoud
+fieldLayouts:
+  831552bd-a2c3-40ac-9368-bb94315a6f7f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: ad7b263d-5ada-49d4-bcdc-6b12371a723d # titel tip
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 075b4b5d-952e-43fa-9fb3-26a28b8373ca
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2e8c9456-16e7-40ad-97b6-1c37c4365e26 # tips
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 271023a7-5f5b-43d1-a902-3283c004320c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ab41cc40-6652-48eb-87cf-7a8a6612a61c
+        userCondition: null
+fields:
+  2e8c9456-16e7-40ad-97b6-1c37c4365e26: # tips
+    columnSuffix: trsydjmk
+    contentColumnType: text
+    fieldGroup: null
+    handle: tips
+    instructions: null
+    name: tips
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      purifierConfig: Default.json
+      purifyHtml: true
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      tinymceConfig: Default.json
+    translationKeyFormat: null
+    translationMethod: none
+    type: abmat\tinymce\Field
+  ad7b263d-5ada-49d4-bcdc-6b12371a723d: # titel tip
+    columnSuffix: gocrnzwa
+    contentColumnType: text
+    fieldGroup: null
+    handle: titelTip
+    instructions: null
+    name: 'titel tip'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: receptTip
+name: 'recept tip'
+sortOrder: 5

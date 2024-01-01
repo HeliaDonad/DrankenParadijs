@@ -1,4 +1,4 @@
-dateModified: 1704043556
+dateModified: 1704108795
 email:
   fromEmail: r0936750@student.thomasmore.be
   fromName: DrankenParadijs
@@ -41,18 +41,28 @@ fs:
     url: '@web/images'
 meta:
   __names__:
+    1fe6ebca-17df-4c28-ac29-0829fa6ad2fe: 'image caption' # image caption
+    2c08307b-8cc5-4a85-8a78-046b10e40851: 'body content' # body content
+    2e8c9456-16e7-40ad-97b6-1c37c4365e26: tips # tips
     2f168f32-022e-41b6-b829-e8227dcba32f: Default # Default
     2f335e3c-a681-4023-b711-1537b7ba860c: 'header image' # header image
     3a1b225f-b8dd-4af7-9891-def9e4c15675: 'reclame assets' # reclame assets
+    3d17f45f-9f65-418f-b340-280cc872a3e9: 'recept tip' # recept tip
+    4b42631d-bebe-47b6-9987-2ca1314f6dcb: sluitzin # sluitzin
+    5bb1553c-1f3c-4929-adce-d1f9012e3c11: 'stappen inhoud' # stappen inhoud
     5d527726-39bd-41f1-b851-6569cba7cf81: 'recept assets' # recept assets
+    6b875dbc-2a6b-441c-b808-725af055e287: 'stappen titel' # stappen titel
     7de9a02c-50a5-4498-b039-9f4ffb040df1: 'banner image' # banner image
     8da4d8b0-06d5-4000-88b3-6d37af04c49c: introduction # introduction
+    9f6d5827-cbea-40ba-855a-7b6e6168d46e: 'recept inhoud' # recept inhoud
+    24b4858f-902d-4682-b645-aad484b9a1d6: 'recept images' # recept images
     24ba44f8-b163-4a93-8ae6-d273399f4d9b: 'about us' # about us
     27bd3e43-7316-4a7d-a87c-26613e63cd50: footer # footer
     34eb7326-076c-456e-8d24-03592761349c: footer # footer
     45f4b5c1-1aa9-41b3-b642-6e387d537078: 'Store Categories' # Store Categories
     62ca9821-d7cc-472c-8b5e-b41fab39fe20: 'Store categories' # Store categories
     66f675c8-f9df-422a-99df-d1a23aa561da: reclame # reclame
+    77a6baf9-db4b-41c2-b317-79f9551272ad: beoordeling # beoordeling
     88d40977-01e3-4486-9f9c-fd72554f9e38: recept # recept
     89f003ec-2127-4003-b52c-afad58cb98ea: Common # Common
     89ff642d-5930-4155-b63c-9b4051268d27: 'about us' # about us
@@ -62,15 +72,24 @@ meta:
     219fbfdb-06e6-41ff-809a-590e5ac34411: 'full text' # full text
     394e8bb7-9a67-4ca9-b2d7-1978533218ab: 'reclame text' # reclame text
     564caf4f-fd90-4ca0-aa9e-be92753bc0f6: 'Rich Text' # Rich Text
+    627bc7e4-85f0-49a0-b502-22943fe616f5: 'recept ingrediënten' # recept ingrediënten
+    60959cef-65c7-402d-a931-059debbc85b8: 'recept sluitzin' # recept sluitzin
     a5f087e4-a3b3-454e-90e3-43620b2a61ff: Default # Default
     a9debf39-46c8-4ec1-b6ab-d8bf324f9369: 'assortiment asset' # assortiment asset
     a9984d38-26a1-4c08-954d-daf19a6c1598: assortiment # assortiment
     ace54ebe-7118-4e76-9672-0cfe7d4679bc: DrankenParadijs # DrankenParadijs
+    ad7b263d-5ada-49d4-bcdc-6b12371a723d: 'titel tip' # titel tip
     b419bd2b-ec55-4113-9035-024006bed5d4: header # header
     bfb57871-957a-42da-a4bf-dada052637a2: 'banner image' # banner image
     c24259f7-a3c9-4f22-b2ab-86bd97231288: Default # Default
+    ccc90026-a2fb-4cb4-af20-be705c9ae2b0: 'banner image' # banner image
+    d0a57b48-788a-4471-adb5-1f2af4bfe2ea: recept # recept
     d501feaa-af09-488e-9dbb-b7a86a6fa40f: 'assortiment image' # assortiment image
+    db3e3c94-bf5a-45d1-94aa-0445068695e4: 'recept bereiding' # recept bereiding
+    ddd8e4ca-c7e2-441d-93e0-eac1b0cfea81: 'recept info' # recept info
     de2a990d-7bbb-45fd-8538-c3aa9d2aee51: header # header
+    e143d9da-11de-48fe-b74f-023ec4f97660: ingrediënten # ingrediënten
+    fa8f5507-219d-4c04-97e7-db5a7b02a5d3: 'recept beoordeling' # recept beoordeling
 plugins:
   abm-tinymce:
     edition: standard

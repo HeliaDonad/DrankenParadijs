@@ -23,40 +23,17 @@
   </section>
     <h2 class="h2">Favoriete recepten</h2>
     <section class="secties2 alle-r">
+    {% set entries = craft.entries().section('recept').all() %}
+
+    {% for entry in entries %}
       <article>
-          <img src="https://fakeimg.pl/500x300" alt="">
+          <img src="{{entry.bannerImage.one().url('bannerImage')}}" alt="">
           <div>
-            <h2><a href="./pages/ReceptDetails.html">Recept Titel 1</a></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-            <a href="./pages/ReceptDetails.html">Lees meer</a>
+            <h2><a href="{{entry.url}}">{{entry.title}}</a></h2>
+            <p>{{entry.introduction}}</p>
+            <a href="{{entry.url}}">Lees meer</a>
           </div>
       </article>
-  
-      <article>
-          <img src="https://fakeimg.pl/500x300" alt="">
-            <div>
-              <h2><a href="./pages/ReceptDetails.html">Recept Titel 2</a></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-              <a href="./pages/ReceptDetails.html">Lees meer</a>
-            </div>
-        </article>
-  
-        <article>
-          <img src="https://fakeimg.pl/500x300" alt="">
-            <div>
-              <h2><a href="./pages/ReceptDetails.html">Recept Titel 3</a></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-              <a href="./pages/ReceptDetails.html">Lees meer</a>
-            </div>
-        </article>
-
-        <article>
-          <img src="https://fakeimg.pl/500x300" alt="">
-            <div>
-              <h2><a href="./pages/ReceptDetails.html">Recept Titel 3</a></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-              <a href="./pages/ReceptDetails.html">Lees meer</a>
-            </div>
-        </article>
+    {% endfor %}
         </section>
 {% endblock %}

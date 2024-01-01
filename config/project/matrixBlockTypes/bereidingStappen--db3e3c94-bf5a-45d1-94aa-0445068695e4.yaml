@@ -1,0 +1,94 @@
+field: 9f6d5827-cbea-40ba-855a-7b6e6168d46e # recept inhoud
+fieldLayouts:
+  761e932f-7431-40d8-ada0-42c446c44ca1:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 6b875dbc-2a6b-441c-b808-725af055e287 # stappen titel
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 64c473da-169a-4843-9286-63f69c11c366
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5bb1553c-1f3c-4929-adce-d1f9012e3c11 # stappen inhoud
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 681f96bd-03f1-43f8-91a6-02cf86c18fd9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 29bfcf22-54ef-46a6-9a89-a72ae3d0b026
+        userCondition: null
+fields:
+  5bb1553c-1f3c-4929-adce-d1f9012e3c11: # stappen inhoud
+    columnSuffix: sacqdbqk
+    contentColumnType: text
+    fieldGroup: null
+    handle: stappenInhoud
+    instructions: null
+    name: 'stappen inhoud'
+    searchable: true
+    settings:
+      addRowLabel: 'Add a row'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - 'stappen instructies'
+                -
+                  - handle
+                  - stappenInstructies
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - multiline
+      defaults: null
+      maxRows: null
+      minRows: null
+      staticRows: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+  6b875dbc-2a6b-441c-b808-725af055e287: # stappen titel
+    columnSuffix: osgwwrhs
+    contentColumnType: text
+    fieldGroup: null
+    handle: stappenTitel
+    instructions: null
+    name: 'stappen titel'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: bereidingStappen
+name: 'recept bereiding'
+sortOrder: 4
