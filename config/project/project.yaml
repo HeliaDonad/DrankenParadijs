@@ -1,4 +1,4 @@
-dateModified: 1704117561
+dateModified: 1704117790
 email:
   fromEmail: r0936750@student.thomasmore.be
   fromName: DrankenParadijs
@@ -93,6 +93,10 @@ meta:
     fa8f5507-219d-4c04-97e7-db5a7b02a5d3: 'recept beoordeling' # recept beoordeling
 plugins:
   abm-tinymce:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  element-api:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
