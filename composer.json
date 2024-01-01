@@ -2,6 +2,7 @@
   "require": {
     "abmat/craft-tinymce": "1.0.5",
     "craftcms/cms": "^4.4.0",
+    "doublesecretagency/craft-spoon": "4.0.4",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {

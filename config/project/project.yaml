@@ -1,4 +1,4 @@
-dateModified: 1704116516
+dateModified: 1704117561
 email:
   fromEmail: r0936750@student.thomasmore.be
   fromName: DrankenParadijs
@@ -96,6 +96,11 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  spoon:
+    edition: standard
+    enabled: true
+    licenseKey: WFVB0M3QKELRZNSM25BUD74O
+    schemaVersion: 4.0.0
 system:
   edition: solo
   live: true

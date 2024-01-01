@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "78d457741d478b40e5ccfa10f9062e0e",
+    "content-hash": "749057b67d801980048858441a527586",
     "packages": [
         {
             "name": "abmat/craft-tinymce",
@@ -941,6 +941,53 @@
                 "php"
             ],
             "time": "2022-12-14T08:49:07+00:00"
+        },
+        {
+            "name": "doublesecretagency/craft-spoon",
+            "version": "4.0.4",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doublesecretagency/craft-spoon/zipball/c70c369338c621dfe5f24530763c82587bea5fe2",
+                "reference": "c70c369338c621dfe5f24530763c82587bea5fe2",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Spoon",
+                "handle": "spoon",
+                "class": "doublesecretagency\\spoon\\Spoon"
+            },
+            "autoload": {
+                "psr-4": {
+                    "doublesecretagency\\spoon\\": "src/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Double Secret Agency",
+                    "homepage": "https://plugins.doublesecretagency.com"
+                }
+            ],
+            "description": "Bend your Matrix fields with block groups & tabs.",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "matrix",
+                "spoon"
+            ],
+            "support": {
+                "docs": "https://github.com/doublesecretagency/craft-spoon/blob/master/README.md",
+                "issues": "https://github.com/doublesecretagency/craft-spoon/issues"
+            },
+            "time": "2023-02-22T21:32:02+00:00"
         },
         {
             "name": "egulias/email-validator",

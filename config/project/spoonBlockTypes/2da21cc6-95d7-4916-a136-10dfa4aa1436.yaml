@@ -1,0 +1,45 @@
+context: global
+field: 9f6d5827-cbea-40ba-855a-7b6e6168d46e # recept inhoud
+fieldLayout:
+  86cf1713-3b18-4fe6-ba37-aac01f33ebb1:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: ccc90026-a2fb-4cb4-af20-be705c9ae2b0 # banner image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9f2b6b09-e355-4706-90d1-b6260713c9f9
+            userCondition: null
+            warning: null
+            width: 100
+        name: assets
+        uid: 3851d5b2-d5d5-4994-a382-1a1549cb02ae
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 1fe6ebca-17df-4c28-ac29-0829fa6ad2fe # image caption
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c6019f66-ef9d-4810-b3f6-a49e4641ad07
+            userCondition: null
+            warning: null
+            width: 100
+        name: content
+        uid: 3f259c26-19bf-4d82-b98c-db23b9097c02
+        userCondition: null
+groupName: Extra
+groupSortOrder: 3
+matrixBlockType: 24b4858f-902d-4682-b645-aad484b9a1d6 # recept images
+sortOrder: 1
