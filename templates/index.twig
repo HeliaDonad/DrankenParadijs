@@ -8,7 +8,7 @@
   {% for entry in entries %}
     <article>
       <picture>
-                <source media="(max-width:959px)" srcset="{{entry.bannerImage.one().url('bannerImage')}}">
+          <source media="(max-width:959px)" srcset="{{entry.bannerImage.one().url('bannerImage')}}">
           <source media="(min-width:960px)" srcset="{{entry.bannerImage.one().url('bannerImage')}}">
         <img src="{{entry.bannerImage.one().url('bannerImage')}}" alt="">
       </picture>
