@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cdd3abdf48c66a083f2268faad58ef96",
+    "content-hash": "a2ea1f34bf3dc9834a0f9531fad39cda",
     "packages": [
         {
             "name": "abmat/craft-tinymce",
@@ -6071,5 +6071,5 @@
     "platform-overrides": {
         "php": "8.0.2"
     },
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }

@@ -6,24 +6,24 @@ use craft\helpers\UrlHelper;
 
 return [
     'endpoints' => [
-        '/api/recept' => function() {
+        '/api/assortiment' => function() {
             return [
                 'elementType' => Entry::class,
-                'criteria' => ['section' => 'recept'],
+                'criteria' => ['section' => 'assortiment'],
                 'cache' => false,
                 'serializer' => 'jsonFeed',
                 'transformer' => function(Entry $entry) {
                     return [
                         'id' => $entry->id,
                         'title' => $entry->title,
-                        'intro' => $entry->introText,
+                        'price' => $entry->price,
                         'bannerImg' => str_replace("https", "http", $entry->bannerImage->one()->getUrl('bannerImage')),
-                        'thumbImg' => str_replace("https", "http", $entry->bannerImage->one()->getUrl('thumbnailImage')),
+                        'assImg' => str_replace("https", "http", $entry->bannerImage->one()->getUrl('assortimentImage')),
                     ];
                 },
             ];
         },
-        '/api/recept/<entryId:\d+>' => function($entryId) {
+        '/api/assortiment/<entryId:\d+>' => function($entryId) {
             return [
                 'elementType' => Entry::class,
                 'criteria' => ['id' => $entryId],
@@ -34,8 +34,9 @@ return [
                   return [
                       'id' => $entry->id,
                       'title' => $entry->title,
-                      'fullText' => $entry->fullText,
-                      'headerImg' => str_replace("https", "http", $entry->bannerImage->one()->getUrl('headerImage')),
+                      'price' => $entry->price,
+                      'richText' => $entry->richText,
+                      'headerImg' => str_replace("https", "http", $entry->bannerImage->one()->getUrl('assortimentImage')),
                   ];
               },
             ];

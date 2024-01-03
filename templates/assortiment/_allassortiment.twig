@@ -23,7 +23,7 @@
             <img src="{{entry.bannerImage.one().url('bannerImage')}}" alt="">
           </picture>
             <div>
-              <h3><a href="#">{{entry.title}}</a></h3>
+              <h3><a href="{{entry.url}}">{{entry.title}}</a></h3>
               <p>€{{entry.price}}</p>
             <div class="indeling">
             {% for category in entry.storeCategories %}

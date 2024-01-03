@@ -229,6 +229,47 @@ h3{
   text-align: center;
 }
 
+.assortiment-details {
+  max-width: 500px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+.assortiment-details h2 {
+  margin-left: 2.2rem;
+}
+
+.assortiment-details img {
+  padding-top: 20px;
+  width: 30%;
+}
+
+.assortiment-details div {
+  margin: 2em;
+  text-align: left;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.btn-more {
+  display: block;
+  text-align: center;
+  width: 150px;
+  transition: all 0.5s;
+  margin: 2em;
+}
+
+.btn-more:hover {
+  background-color: #6547e9;
+  color: #fff;
+}
+
 @media only screen and (max-width: 959px) {
 
     .menu-nav {

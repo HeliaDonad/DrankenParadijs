@@ -1,0 +1,13 @@
+{% extends "_layout" %}
+
+{% block content %}
+    <section class="assortiment-details">
+        <img src="{{entry.bannerImage.one().url('assortimentImage')}}" alt="">
+        <h2>{{entry.title}}</h2>
+        <p class="price" >€{{entry.price}}</p>
+        <div>
+        {{entry.richText}}
+        </div>
+        <a class="button btn-more" href="#">In winkelmandje</a>
+    </section>
+{% endblock %}

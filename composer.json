@@ -3,7 +3,7 @@
     "abmat/craft-tinymce": "1.0.5",
     "craftcms/cms": "^4.4.0",
     "craftcms/element-api": "3.0.1.1",
-    "craftcms/feed-me": "5.3.0",
+    "craftcms/feed-me": "^5.3",
     "doublesecretagency/craft-spoon": "4.0.4",
     "vlucas/phpdotenv": "^5.4.0"
   },
