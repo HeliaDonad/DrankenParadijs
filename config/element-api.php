@@ -17,7 +17,6 @@ return [
                         'id' => $entry->id,
                         'title' => $entry->title,
                         'price' => $entry->price,
-                        'bannerImg' => str_replace("https", "http", $entry->bannerImage->one()->getUrl('bannerImage')),
                         'assImg' => str_replace("https", "http", $entry->bannerImage->one()->getUrl('assortimentImage')),
                     ];
                 },
@@ -36,7 +35,7 @@ return [
                       'title' => $entry->title,
                       'price' => $entry->price,
                       'richText' => $entry->richText,
-                      'headerImg' => str_replace("https", "http", $entry->bannerImage->one()->getUrl('assortimentImage')),
+                      'assImg' => str_replace("https", "http", $entry->bannerImage->one()->getUrl('assortimentImage')),
                   ];
               },
             ];
