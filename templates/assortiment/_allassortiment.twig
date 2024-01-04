@@ -17,11 +17,7 @@
           data-{{category}}
         {% endfor %}
         >
-          <picture>
-            <source media="(max-width:959px)" srcset="{{entry.bannerImage.one().url('assortimentImage')}}">
-            <source media="(min-width:960px)" srcset="{{entry.bannerImage.one().url('assortimentImage')}}">
-            <img src="{{entry.bannerImage.one().url('bannerImage')}}" alt="">
-          </picture>
+            <img src="{{entry.bannerImage.one().url('assortimentImage')}}" alt="">
             <div>
               <h3><a href="{{entry.url}}">{{entry.title}}</a></h3>
               <p>€{{entry.price}}</p>
