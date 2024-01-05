@@ -34,7 +34,7 @@ return [
                       'id' => $entry->id,
                       'title' => $entry->title,
                       'price' => $entry->price,
-                      'richText' => $entry->richText,
+                      'fullText' => $entry->fullText,
                       'assImg' => str_replace("https", "http", $entry->bannerImage->one()->getUrl('assortimentImage')),
                   ];
               },

@@ -69,13 +69,13 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 564caf4f-fd90-4ca0-aa9e-be92753bc0f6 # Rich Text
+            fieldUid: 219fbfdb-06e6-41ff-809a-590e5ac34411 # full text
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: f75508f5-ad50-44fe-8135-cf4b67c988f8
+            uid: a3b1d15d-f436-4260-ad1c-430e7a097914
             userCondition: null
             warning: null
             width: 100
