@@ -3,12 +3,12 @@
 {% block content %}
     <section class="assortiment-details">
         <img src="{{entry.bannerImage.one().url('assortimentImage')}}" alt="">
+    <div class="omschrijving">
         <h2>{{entry.title}}</h2>
         <p class="price" >€{{entry.price}}</p>
-        <div>
         <h3><strong>Omschrijving:</strong></h3>
         <p>{{entry.fullText}}</p>
-        </div>
         <a class="button btn-more" href="#">In winkelmandje</a>
+        </div>
     </section>
 {% endblock %}
